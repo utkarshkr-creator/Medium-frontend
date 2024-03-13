@@ -13,7 +13,8 @@ export default function Page({ params }: { params: { id: string } }) {
           {blog?.title}
         </div>
         <div className="text-slate-500 pt-2">
-          {blog ? `Post on ${new Date(blog?.createdAt)}` : ""}
+
+          {`Post on ${blog?.createdAt}`}
         </div>
         <div className="pt-4">
           {blog?.content}
