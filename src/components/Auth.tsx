@@ -12,7 +12,7 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
       alert("Aleady log in");
       router.push('/blogs');
     }
-  }, [])
+  })
 
   const [postInputs, setPostInputs] = useState<SignupInput>({
     'name': "",
