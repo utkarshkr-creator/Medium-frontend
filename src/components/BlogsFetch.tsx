@@ -38,6 +38,6 @@ export default function useBlogs() {
     }).then(response => {
       setBlogs(response.data.blogs);
     })
-  }, [])
+  })
   return { blogs }
 }
